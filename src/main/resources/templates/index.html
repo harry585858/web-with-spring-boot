@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 th:text="${test}"></h1>
+    <th:block th:each="no : ${#numbers.sequence(1,5)}">
+        <li th:text="${no}"></li>
+    </th:block>
+
+</body>
+</html>
